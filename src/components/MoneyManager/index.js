@@ -112,7 +112,7 @@ class MoneyManager extends Component {
             <div className="input-container">
               <label htmlFor="amount">AMOUNT</label>
               <input
-                type="number"
+                type="text"
                 value={amountInput}
                 id="amount"
                 placeholder="AMOUNT"
@@ -142,12 +142,12 @@ class MoneyManager extends Component {
           </form>
           <div className="history-container">
             <h1 className="form-heading">History</h1>
-            <ul className="transactions-header">
-              <li className="transaction-details">Title</li>
-              <li className="transaction-details">Amount</li>
-              <li className="transaction-details">Type</li>
-            </ul>
-            <ul>
+            <div className="transactions-header">
+              <p className="transaction-details">Title</p>
+              <p className="transaction-details">Amount</p>
+              <p className="transaction-details">Type</p>
+            </div>
+            <ul className="transactions-container">
               {transactionsList.map(eachTransaction => (
                 <TransactionItem
                   key={eachTransaction.id}

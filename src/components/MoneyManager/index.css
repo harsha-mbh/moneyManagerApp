@@ -70,7 +70,18 @@
   padding: 15px;
 }
 .transactions-header {
-  list-style-type: none;
   display: flex;
+  padding: 12px;
   border: solid 1px #7e858e;
+  height: 50px;
+  align-items: center;
+}
+.transaction-details {
+  width: 33%;
+  margin-right: 20px;
+}
+.transactions-container {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
 }
